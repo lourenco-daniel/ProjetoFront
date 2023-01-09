@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Daniel</title>
 </head>
-<body>
+<body onload="getAllProducts">
     <h1> Daniel lindo</h1>
+
+    <script></script>
 </body>
+
+<script>
+    function getAllProducts() {
+        fetch('https://dummyjson.com/products')
+        .then(res => res.json())
+        .then(console.log);
+    }
+</script>
 </html>

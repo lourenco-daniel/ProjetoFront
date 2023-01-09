@@ -8,8 +8,7 @@
 </head>
 <body>
     <h1> Daniel lindo</h1>
-
-    <script></script>
+    <p id="Teste">ESTE CONTEUDO</p>
 </body>
 
 <script>
@@ -17,7 +16,11 @@
     function getAllProducts() {
         fetch('https://dummyjson.com/products')
         .then(res => res.json())
-        .then(console.log);
+        .then((resp) => {
+            let teste = document.querySelector("#teste")
+            document.write("Tmj" + resp + "" + teste)
+
+        });
     }
 </script>
 </html>

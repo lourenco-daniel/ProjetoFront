@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Daniel</title>
 </head>
-<body onload="getAllProducts">
+<body>
     <h1> Daniel lindo</h1>
 
     <script></script>
 </body>
 
 <script>
+    document.addEventListener('DOMContentLoaded', getAllProducts, false);
     function getAllProducts() {
         fetch('https://dummyjson.com/products')
         .then(res => res.json())
